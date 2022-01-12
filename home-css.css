@@ -1,0 +1,197 @@
+/* import font mogra dan poppins di google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mogra&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Untuk Body */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* text nama overview - 2 */
+*{ 
+    color:black; 
+    text-decoration: none;
+}
+
+.kotak-navbar{
+    position: absolute;
+    width: 1366px;
+    height: 86px;
+    left: 0px;
+    top: 0px;
+    background: #C4C4C4;
+    visibility: hidden;
+}
+
+/* Untuk Logo Navbar */
+.logo-navbar{
+    position: absolute;
+    width: 184px;
+    height: 43px;
+    left: 78px;
+    top: 24px;
+    font-family: Mogra;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 43px;
+    color: #000000;
+}
+
+/* text about navbar */
+.about-navbar{
+    position: absolute;
+    width: 72px;
+    height: 36px;
+    left: 754px;
+    top: 25px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;
+    color: #000000;
+}
+
+/* text blog navbar */
+.blog-navbar{
+    position: absolute;
+    width: 54px;
+    height: 36px;
+    left: 945px;
+    top: 25px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;
+    color: #000000;
+}
+
+/* text buku tamu navbar  */
+.buku-tamu-navbar, .underline-2{
+    position: absolute;
+    width: 131px;
+    height: 36px;
+    left: 1118px;
+    top: 25px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;
+    color: #000000;
+}
+
+/* text nama overview */
+.nama-overview{
+    position: absolute;
+    width: 408px;
+    height: 58px;
+    left: 79px;
+    top: 225px;
+    font-family: Mogra;
+    font-style: normal;
+    font-weight: normal;
+    /* font-size: 17px;
+    line-height: 58px; */
+    color: #000000;
+}
+
+/* text deskripsi overview */
+.deskripsi-overview{
+    position: absolute;
+    width: 627px;
+    height: 27px;
+    left: 79px;
+    top: 283px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    /* font-size: 18px; */
+    line-height: 27px;
+    animation: fadeIn 1.5s ease-in both;
+}
+
+/* gambar pada class .gambar-overview */
+img{
+    width: 200px;
+    height: auto;
+    margin-left: 950px;
+    margin-top: 150px;
+    border: 3px solid black;
+    animation: fadeIn 1.5s ease-in both;
+}
+
+/* text footer */
+footer{
+    position: absolute;
+    width: 460px;
+    height: 27px;
+    left: calc(50% - 460px/2);
+    top: calc(50% - 141px/2 + 350.5px);
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+
+/* icon heard menjadi merah yang awalannya hitam */
+.heard-red{
+    color: red;
+    margin-left: 54px;
+    margin-top: 1px;
+}
+
+/* CSS - Custom */
+.underline::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0074D9;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.underline-2::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0074D9;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Effect */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .underline:hover::before{
+      left: -3.5px;
+      right: auto;
+      width: 100%;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .underline-2:hover::before{
+      left: -10.5px;
+      right: auto;
+      width: 100%;
+    }
+}
